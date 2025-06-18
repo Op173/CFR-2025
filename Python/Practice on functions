@@ -151,8 +151,153 @@
   },
   {
    "cell_type": "code",
+   "execution_count": 68,
+   "id": "faccec12-9ad1-42f7-a8ea-46ddc6a947a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Darius's lunch cost: 11\n",
+      "Belle's lunch cost: 11\n",
+      "Amel's lunch cost: 15\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Step 1 – Define the Cost_Of_Lunch function\n",
+    "def Cost_Of_Lunch(num_Pita, num_Lentil_Soup, num_Falafel):\n",
+    "    price_Pita = 1\n",
+    "    price_Lentil_Soup = 2\n",
+    "    price_Falafel = 3\n",
+    "    \n",
+    "    cost_Pita = num_Pita * price_Pita\n",
+    "    cost_Lentil_Soup = num_Lentil_Soup * price_Lentil_Soup\n",
+    "    cost_Falafel = num_Falafel * price_Falafel\n",
+    "    \n",
+    "    total_cost = cost_Pita + cost_Lentil_Soup + cost_Falafel\n",
+    "    return total_cost\n",
+    "\n",
+    "# Step 2 – Use the function to calculate total payment for each person\n",
+    "Darius = Cost_Of_Lunch(1, 2, 2)\n",
+    "Belle = Cost_Of_Lunch(1, 2, 2)\n",
+    "Amel = Cost_Of_Lunch(3, 3, 2)\n",
+    "\n",
+    "# Step 3 – Print the cost for each person\n",
+    "print(\"Darius's lunch cost:\", Darius)\n",
+    "print(\"Belle's lunch cost:\", Belle)\n",
+    "print(\"Amel's lunch cost:\", Amel)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "82e1d7ca-a51e-4194-91c0-619ebb8548d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Define celsius to Fahrenheit\n",
+    "\n",
+    "def cels_to_fahr(C):\n",
+    "\n",
+    "# Equation for Fahrenheit\n",
+    "    F = C * 9/5 + 32\n",
+    "\n",
+    "    return F"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "id": "29f6f099-5285-448b-ac3c-be285c3ab354",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "71.6\n"
+     ]
+    }
+   ],
+   "source": [
+    "Ideal_temperture = cels_to_fahr(22)\n",
+    "print(Ideal_temperture)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "499d274b-aa73-403c-9755-d20c6ecb9987",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Define Fahrenheit to Celsius\n",
+    "\n",
+    "def fahr_to_cels(F):\n",
+    "\n",
+    "# Equation for Celsius \n",
+    "    C = (F-32)*5/9\n",
+    "\n",
+    "    return C"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "1e16c47f-2f35-4512-8ab9-efbb2dad9e11",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "21.999999999999996\n"
+     ]
+    }
+   ],
+   "source": [
+    "Celsius_Temp = fahr_to_cels(71.6)\n",
+    "print(Celsius_Temp)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 113,
+   "id": "6ea5fbdd-e66b-4b2d-8756-daeecac4b011",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (3413721147.py, line 13)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[113], line 13\u001b[1;36m\u001b[0m\n\u001b[1;33m    if  [2] =< 500:\u001b[0m\n\u001b[1;37m            ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Notes for budget spending \n",
+    "# M T W Th F, Budget $500 \n",
+    "\n",
+    "import numpy as np\n",
+    "\n",
+    "# Step 2: Creating Arrays\n",
+    "# Creating a 1D array\n",
+    "array1 = np.array([300, 700, 100, 800, 200])\n",
+    "print(\"1D Array:\", array1)\n",
+    "\n",
+    "# Step 3 Adding over budget error \n",
+    "\n",
+    "if  [2] < 500:\n",
+    "    print('Flag')"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
-   "id": "5ab77d07-6a68-4e48-9463-b44091309e63",
+   "id": "3b00a994-c249-4cd1-a91a-d5b2e5dc5968",
    "metadata": {},
    "outputs": [],
    "source": []
