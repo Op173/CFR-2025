@@ -344,7 +344,7 @@
     "# Replace these with your actual values\n",
     "R =[13.803, 5.878, 3.285, 2.145, 1.540, 1.177, 0.932, 0.764, 0.640, 0.547, 0.475, 0.418, 0.370]\n",
     "y = [GB_RM0, GB_RM1, GB_RM2, GB_RM3, GB_RM4, GB_RM5, GB_RM6, GB_RM7, GB_RM8, GB_RM9, GB_RM10, GB_RM11, GB_RM12]\n",
-    "errors = [abs(SD_GB0/), abs(SD_GB1), abs(SD_GB2), abs(SD_GB3), abs(SD_GB4), abs(SD_GB5), abs(SD_GB6), abs(SD_GB7), abs(SD_GB8), abs(SD_GB9), abs(SD_GB10), abs(SD_GB11), abs(SD_GB12)]\n",
+    "errors = [abs(SD_GB0/np.sqrt(len(GB0)), abs(SD_GB1/np.sqrt(len(GB1)), abs(SD_GB2), abs(SD_GB3), abs(SD_GB4), abs(SD_GB5), abs(SD_GB6), abs(SD_GB7), abs(SD_GB8), abs(SD_GB9), abs(SD_GB10), abs(SD_GB11), abs(SD_GB12)]\n",
     "# Edit above ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
     "\n",
     "# Fit a polynomial of degree 2\n",
